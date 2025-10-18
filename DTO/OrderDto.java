@@ -1,17 +1,22 @@
 package com.alpha.ABClogistics.DTO;
 
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 public class OrderDto {
 	@Id
+	@NotNull
 	private int id;
+	@NotNull(message= "order date is requried")
 	private String orderdate;
+	
 	private int cargoID;
 	private String cargoName;
 	private String cargoDescription;
+	@Email(message="Email format is missing")
 	private String email;
 	
 	
@@ -38,10 +43,11 @@ public class OrderDto {
 
 	private int Carrier;
 	
-	@NotNull
+	@NotNull(message= "must enter the cargo weight")
 	@Positive
 	private int cargowt;
-	@NotNull
+	
+	@NotNull(message= "Atleast one count need to be entered")
 	@Positive
 	@Min(1)
 	private int cargoCount;

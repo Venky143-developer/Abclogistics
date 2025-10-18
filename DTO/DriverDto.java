@@ -1,12 +1,19 @@
 package com.alpha.ABClogistics.DTO;
 
+import org.springframework.format.annotation.NumberFormat;
+
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 
 public class DriverDto {
 	@Id
+	
 	private int id;
 	private String name;
+	
+	@NumberFormat
 	private long contact;
+	
 	public int getId() {
 		return id;
 	}
