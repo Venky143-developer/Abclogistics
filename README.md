@@ -1,6 +1,7 @@
 # ABClogistics
 
-This is a Spring Boot project for managing logistics, including Orders, Trucks, Cargo, and Drivers.
+ABClogistics is a Spring Boot logistics management project that handles Orders, Trucks, Cargo, and Drivers efficiently.  
+It includes REST APIs for CRUD operations, email notifications, and exception handling.
 
 ## Features
 - Order management
@@ -8,3 +9,9 @@ This is a Spring Boot project for managing logistics, including Orders, Trucks, 
 - Cargo management
 - Email notifications
 - Exception handling
+
+## Technologies
+- Java 17
+- Spring Boot
+- Maven
+- JPA / Hibernate
