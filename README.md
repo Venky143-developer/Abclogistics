@@ -21,8 +21,8 @@ It provides a REST API interface for managing logistics operations, including or
 - **Java 17**  
 - **Spring Boot**  
 - **Maven**  
-- **JPA / Hibernate**  
-- **MySQL** (or your preferred database)  
+- **Hibernate**  
+- **Postgresql** 
 - **REST API**
 
 ---
